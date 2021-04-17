@@ -1,0 +1,153 @@
+:root {
+  --principal-blue: #33546d;
+  --low-pink: #f7efed;
+  --skyblue: #7fa7b8;
+  --hotpink: #f1485b;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline;
+  color: black;
+}
+
+header {
+  width: 100%;
+  height: 130px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+header .header-icons-container {
+  width: 100%;
+  height: 60px;
+  display: grid;
+  background-color: var(--principal-blue);
+}
+
+header .header-icons-container .icons {
+  width: 300px;
+  height: auto;
+  display: flex;
+  justify-items: flex-end;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: end;
+  margin-right: 50px;
+}
+
+header .header-icons-container .icons a {
+  width: 40px;
+  height: 40px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: auto;
+}
+
+nav .nav-logo-container {
+  margin-left: 50px;
+  align-items: center;
+}
+
+nav .profile-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+}
+
+nav .profile-link a {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+nav .nav-logo-container .logo {
+  display: grid;
+  grid-template-columns: 80px auto;
+}
+
+nav .nav-logo-container .logo p {
+  font-family: "Roboto", sans-serif;
+  margin: 1.8px 0;
+  font-weight: 800;
+}
+
+nav .nav-logo-container .logo p:first-child {
+  font-size: 2.5rem;
+}
+
+nav .nav-logo-container .logo p:last-child {
+  font-size: 1.8rem;
+}
+
+nav .nav-logo-container img {
+  width: 70px;
+}
+
+nav .nav-logo-container .logo div {
+  padding-top: 5px;
+}
+
+main {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-gap: 60px;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+  background-image: url("../assets/images/portada.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: -1;
+}
+
+button {
+  background-color: var(--hotpink);
+  width: 200px;
+  border-radius: 20px;
+  font-size: 2rem;
+  border: none;
+  font-weight: 800;
+  color: var(--low-pink);
+  align-self: baseline;
+}
+
+main h1 {
+  color: var(--low-pink);
+  font-family: "Roboto", sans-serif;
+  font-size: 5rem;
+  margin: 0;
+  align-self: end;
+}
