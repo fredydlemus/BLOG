@@ -7,6 +7,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -17,6 +18,19 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.home-body {
+  position: static;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.grid-container {
+  max-width: 980px;
+  margin: auto;
 }
 
 a {
@@ -164,4 +178,117 @@ nav .nav-logo-container .logo div {
 
 .home-main button:hover {
   transform: scale(1.1);
+}
+
+.blogs-main {
+  display: grid;
+}
+
+.blogs-news-container {
+  background-color: var(--skyblue);
+  padding: 0 50px 40px;
+}
+
+.blogs-main-new {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 2fr;
+}
+
+.blogs-main-new h3 {
+  font-size: 2.5rem;
+}
+
+.blogs-news-img-container {
+  grid-column: 1;
+}
+
+.blogs-news-img-container img {
+  width: 100%;
+}
+
+.blogs-news-info-container {
+  grid-column: 2;
+  margin-left: 30px;
+}
+
+.blogs-news-info-container h2 {
+  font-size: 2.5rem;
+}
+
+.blogs-news-info-container p {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.blogs-posts-container {
+  padding: 0 50px 40px;
+}
+
+.blogs-posts-container h3 {
+  border-bottom: 1px solid #cdd2da;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.blogs-button {
+  border: 1px solid var(--hotpink);
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  position: relative;
+  border-radius: 10px;
+}
+
+.blogs-button:hover {
+  border: 1px solid white;
+  color: white;
+  background-color: var(--hotpink);
+}
+
+.post-container .blogs-button {
+  position: relative;
+  top: -15px;
+}
+
+.blogs-posts-container .post-container {
+  display: inline-block;
+  padding: 10px;
+  max-width: 30%;
+  min-height: 465px;
+  margin: 0 2.5px;
+  margin-bottom: 50px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.blogs-posts-container .post-container p {
+  margin-bottom: 35px;
+  font-size: 1.6rem;
+}
+
+.blogs-posts-container .post-container h4 {
+  font-size: 2rem;
+}
+
+.blogs-posts-container .post-container img {
+  width: 100%;
+  height: 195px;
+}
+
+.blogs-posts-container h3 {
+  font-size: 2rem;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: var(--principal-blue);
+  border-top: 35px solid var(--skyblue);
+  text-align: center;
+}
+
+footer p {
+  color: var(--low-pink);
+  margin-top: 30px;
+  font-size: 1.8rem;
 }
