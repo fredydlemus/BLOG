@@ -292,3 +292,94 @@ footer p {
   margin-top: 30px;
   font-size: 1.8rem;
 }
+
+.blogpost-img-container {
+  padding: 0 50px 40px;
+}
+
+.blogpost-img-container img {
+  width: 100%;
+}
+
+.blogpost-main-container {
+  padding: 0 50px 40px;
+}
+.blogpost-main-container h3 {
+  border-bottom: 1px solid #cdd2da;
+  padding-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.blogpost-main-container article h1 {
+  font-size: 3.5rem;
+}
+
+.blogpost-main-container article p {
+  font-size: 2rem;
+}
+
+.blogpost-main {
+  background-color: var(--low-pink);
+}
+
+.contact-main-container {
+  width: 100%;
+  height: 200px;
+  display: inline-flex;
+  background-color: #cdd2da;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-main-container img {
+  width: 100px;
+}
+
+.contact-main-container div:first-child {
+  display: inline-flex;
+  align-items: center;
+}
+
+.contact-left {
+  margin-left: 15px;
+  font-size: 1.5rem;
+  align-self: flex-end;
+}
+
+.contact-main-container a {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.contact-main-container p {
+  max-width: 250px;
+  margin-bottom: 0;
+}
+
+.perfil-main {
+  background-color: var(--skyblue);
+}
+
+.perfil-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  padding: 50px;
+}
+
+.perfil-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.perfil-container div:last-child {
+  margin-left: 20px;
+}
+
+.perfil-container p {
+  font-size: 1.8rem;
+}
+
+.perfil-container h2 {
+  font-size: 2.5rem;
+}
