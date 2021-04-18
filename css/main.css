@@ -108,7 +108,7 @@ nav .nav-logo-container .logo div {
   padding-top: 5px;
 }
 
-main {
+.home-main {
   position: relative;
   display: grid;
   grid-template-rows: 1fr 2fr;
@@ -122,7 +122,7 @@ main {
   background-repeat: no-repeat;
   z-index: 1;
 }
-main::after {
+.home-main::after {
   content: "";
   position: absolute;
   top: 0;
@@ -133,21 +133,35 @@ main::after {
   z-index: -1;
 }
 
-button {
+.home-main button {
   background-color: var(--hotpink);
   width: 200px;
+  height: 50px;
   border-radius: 20px;
   font-size: 2rem;
   border: none;
   font-weight: 800;
-  color: var(--low-pink);
+
   align-self: baseline;
 }
 
-main h1 {
+.home-main button a {
+  color: var(--low-pink);
+}
+
+.home-main h1 {
   color: var(--low-pink);
   font-family: "Roboto", sans-serif;
   font-size: 5rem;
   margin: 0;
   align-self: end;
+}
+
+.home-main button:active {
+  background-color: #c03948;
+  border: none;
+}
+
+.home-main button:hover {
+  transform: scale(1.1);
 }
