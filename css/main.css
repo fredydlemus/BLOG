@@ -229,6 +229,8 @@ nav .nav-logo-container .logo div {
   border-bottom: 1px solid #cdd2da;
   padding-bottom: 20px;
   text-align: center;
+  font-size: 2rem;
+  grid-column: 1 / 4;
 }
 
 .blogs-button {
@@ -237,6 +239,7 @@ nav .nav-logo-container .logo div {
   font-size: 1.2rem;
   position: relative;
   border-radius: 10px;
+  align-self: flex-start;
 }
 
 .blogs-button:hover {
@@ -245,24 +248,20 @@ nav .nav-logo-container .logo div {
   background-color: var(--hotpink);
 }
 
-.post-container .blogs-button {
-  position: relative;
-  top: -15px;
-}
-
 .blogs-posts-container .post-container {
-  display: inline-block;
   padding: 10px;
-  max-width: 30%;
   min-height: 465px;
   margin: 0 2.5px;
   margin-bottom: 50px;
   border: 1px solid gray;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .blogs-posts-container .post-container p {
-  margin-bottom: 35px;
+  margin-bottom: auto;
+  margin-top: 0;
   font-size: 1.6rem;
 }
 
@@ -275,16 +274,20 @@ nav .nav-logo-container .logo div {
   height: 195px;
 }
 
-.blogs-posts-container h3 {
-  font-size: 2rem;
-}
-
 footer {
   width: 100%;
   height: 80px;
   background-color: var(--principal-blue);
   border-top: 35px solid var(--skyblue);
   text-align: center;
+}
+
+.grid-container_2 {
+  max-width: 980px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 70px 1fr 1fr;
 }
 
 footer p {
