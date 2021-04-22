@@ -43,6 +43,10 @@
   .blogs-posts-container h3 {
     grid-column: 1 / 2;
   }
+
+  .perfil-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 469px) {
@@ -80,6 +84,20 @@
 
   .blogs-news-container {
     padding: 0 21px 40px;
+  }
+  .blogpost-img-container {
+    padding: 0 20px 40px;
+  }
+
+  .blogpost-main-container {
+    padding: 0 30px 40px;
+  }
+  .perfil-container {
+    padding: 25px;
+  }
+
+  .contact-main-container div:first-child {
+    margin: 0 20px 0;
   }
 }
 
